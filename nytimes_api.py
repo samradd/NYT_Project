@@ -1,6 +1,6 @@
 import requests, json
 
-payload = {'begin_date': '19000101', 'end_date': '19000101', 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
+payload = {'begin_date':'19000101', 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
 r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
 
 print (r.status_code)
@@ -9,21 +9,37 @@ print (r.status_code)
 
 data = json.loads(r.text)
 
-# print (json.dumps(data, indent=4))
+#get to offset & divide 13million number by 10, then loop through for that num of pages
+# for page in xnum_of_pages
+
+# count = data['response']['meta']['hits']
+
+# pages = hits/10
+
+# for a_page in pages:
+# 	payload = {'pages': a_page, 'api-key'}
+# 	r = requests...
 
 
-for first_layer in data:
-	# print (first_layer)
+print (json.dumps(data, indent=4))
 
-	if first_layer == 'response':
 
-		for second_layer in data[first_layer]:
-			# print (second_layer)
+# 
+# for first_layer in data:
+# 	# print (first_layer)
 
-			if second_layer == 'docs':
+# 	if first_layer == 'response':
 
-				for third_layer in data[first_layer][second_layer]:
-					print (third_layer['headline']['main'])
+# 		for second_layer in data[first_layer]:
+# 			# print (second_layer)
+
+# 			if second_layer == 'docs':
+
+# 				for third_layer in data[first_layer][second_layer]:
+# 					print (third_layer['headline']['main'])
+
+
+
 
 				
 
