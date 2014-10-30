@@ -24,19 +24,24 @@ for first_layer in data:
 
 			# print (pages)
 
-			# page_num= 0
 
-			# while True:
+			for a_page in range(0,pages):
 
-			payload = {'begin_date':'19000101', 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
-			r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
+				payload = {'begin_date':'19000101', 'page': a_page, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
+				r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
 
-			articles = page_num[data]
+				data = json.loads(r.text)
 
-			for articles in data:
+				print (data)
+ 				
+ 				# loop through the dates & then through the pages
 
-				for article in articles['response']['docs']:
-					print (article['headline']['main'])
+				# articles = page_num[data]
+
+				# for articles in data:
+
+				# 	for article in articles['response']['docs']:
+				# 	print (article['headline']['main'])
 			#ERROR WE KEEP GETTING!!! TypeError: 'int' object is not subscriptable	 (also that it's not iterable)	
 			#iterate the page number			
 						#count += 1
