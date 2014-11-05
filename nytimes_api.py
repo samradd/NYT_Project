@@ -9,6 +9,8 @@ print (r.status_code)
 
 data = json.loads(r.text)
 
+print (json.dumps(data, indent=4))
+
 for first_layer in data:
 	# print (first_layer)
 
@@ -22,9 +24,10 @@ for first_layer in data:
 
 			pages = int(count / 10)
 
-			# print (pages)
+			print (pages)
 
 
+<<<<<<< Updated upstream
 			for a_page in range(0,pages):
 
 				payload = {'begin_date':'19000101', 'page': a_page, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
@@ -47,6 +50,11 @@ for first_layer in data:
 						#count += 1
 		
 
+=======
+			# for pages in data:
+			# 	payload = {'begin_date':'19000101', 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
+			# 	data = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
+>>>>>>> Stashed changes
 
 			# 	for first_layer in data:
 			# 		print (first_layer)
