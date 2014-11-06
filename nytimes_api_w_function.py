@@ -5,7 +5,7 @@ import requests, json
 
 def JsonFileName(headline_dates,page_num):
 	separator = '_'
-	result = headline_dates + separator + page_num
+	result = headline_dates + separator + page_num + '.json'
 	return result
 
 json_file = []
@@ -55,7 +55,6 @@ while date > 19000101:
 
 		with open(file_name, 'w') as f:
 			f.write(json.dumps(json_file,indent=4))
-
 
 # 	# Increments the "beginning date" by subtracting 10,000 (reduces it by one year)
 	date = date - 10000
