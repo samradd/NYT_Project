@@ -1,48 +1,60 @@
 import requests, json
 
-<<<<<<< HEAD
-
-for year in range(1900, 2000):
-
-	begin_date = str(year) + '0101'
-
-	end_date = str(year) + '0101'
-
-	# print (begin_date)
-
-	payload = {'begin_date': begin_date, 'end_date': end_date, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
-	r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
-
-	data = json.loads(r.text)
-=======
 # Parameter for just Foreign news
-# 'fq': 'news_desk:("Foreign")'
+# , 'fq': 'news_desk:("National Desk")'
 
 # Beginning date
-date = 20141030
+begin_date = 20140101
+end_date = 20141231
 
 # Loop through every year of that MM/DD going back to beginning of archive
-while date > 18510101:
+# while date > 18510101:
 
-	# API call
-	payload = {'begin_date': date, 'end_date': date, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
+# API call
+payload = {'begin_date': begin_date, 'end_date': end_date, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813', 'fq': 'word_count:([2000 TO 7000]) AND Poopie'}
+r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
+
+# Parses JSON from NYT API into a data structure 
+data = json.loads(r.text)
+
+# Takes number of hits and finds # of pages
+count = data['response']['meta']['hits']
+pages = count / 10 + 1
+print (count)
+print (pages)
+
+# Now that we've found "pages," loop through each page of 10 articles
+for a_page in range(0,pages):
+	
+	# Prints the page number
+	print (a_page)
+
+	# Resets 'payload' and 'r' to the new API request for that specific page
+	payload = {'begin_date': begin_date, 'end_date': end_date, 'page': a_page, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813', 'fq': 'word_count:([2000 TO 7000]) AND Poopie'}
 	r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
 
-	# Parses JSON from NYT API into a data structure 
+	# Resets 'data' to the payload of the new API request
 	data = json.loads(r.text)
 
 	# If statement to check whether API response is "good"		
 	if data['response']['docs']:
-	
-		# Creates variables for 1st article from each day
-		headline = data['response']['docs'][0]['headline']['main']
-		pub_date = data['response']['docs'][0]['pub_date']
 
-		# Prints those variables
-		print (headline + ' - ' + pub_date)
+		for article in data['response']['docs']:
+			headline = article['headline']['main']
+			pub_date = article['pub_date']
+			print (headline + ' - ' + pub_date)
 
 	# Increments the "beginning date" by subtracting 10,000 (reduces it by one year)
-	date = date - 10000
+	# date = date - 10000
+	begin_date = begin_date - 10000
+	end_date = end_date - 10000
+
+# Creates variables for 1st article from each day
+# headline = data['response']['docs'][0]['headline']['main']
+# pub_date = data['response']['docs'][0]['pub_date']
+
+# Prints those variables
+# print (headline + ' - ' + pub_date)
 
 
 
@@ -64,23 +76,8 @@ while date > 18510101:
 # 			pages = int(count / 10)
 
 # 			# print (pages)
->>>>>>> FETCH_HEAD
-
-	# print (data)
-
-<<<<<<< HEAD
-
-# pages loop up here (217)...
-
-# year_pagenum.json (save requests to json file for each day)
 
 
-
-# payload = {'begin_date':'19000101', 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
-# r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
-
-# print (r.status_code)
-=======
 # 			for a_page in range(0,pages):
 
 # 				payload = {'begin_date':'19000101', 'page': a_page, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
@@ -102,32 +99,13 @@ while date > 18510101:
 # 			iterate the page number			
 # 						count += 1
 		
->>>>>>> FETCH_HEAD
 
-# # print (r.text)
 
-<<<<<<< HEAD
-# data = json.loads(r.text)
-=======
 # 				for first_layer in data:
 # 					print (first_layer)
->>>>>>> FETCH_HEAD
 
-# for first_layer in data:
-# 	# print (first_layer)
 
-# 	if first_layer == 'response':
-		
-# 		for second_layer in data[first_layer]:
-# 			# print (second_layer)
 
-<<<<<<< HEAD
-# 			count = data['response']['meta']['hits']
-# 			# print (count)
-
-# 			pages = int(count / 10)
-# 			# print (pages)
-=======
 # 					if first_layer == 'response':
 
 # 						for second_layer in data[first_layer]:
@@ -137,62 +115,43 @@ while date > 18510101:
 
 # 								for third_layer in data[first_layer][second_layer]:
 # 									print (third_layer['headline']['main'])
->>>>>>> FETCH_HEAD
-
-# 			for a_page in range(0,pages):
 
 
-# 				payload = {'begin_date': begin_date, 'end_date': end_date, 'page': a_page, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
-# 				r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
 
-# 				data = json.loads(r.text)
-
-				# print (data)
+				
 
 
-<<<<<<< HEAD
-=======
+
+
 			
 # get to offset & divide 13million number by 10, then loop through for that num of pages
 # for page in xnum_of_pages
->>>>>>> FETCH_HEAD
 
-				# def date_range(start_date, end_date):
-				# 	if start_date = end_date:
-				# 		for n in range ((end_date - start_date).days + 1):
-				# 			yield start_date + datetime.whatever(n)
+# count = data['response']['meta']['hits']
 
-				# date_result = date_range(19000101, 19010101)
+# pages = hits/10
 
-				# print (date_result)
-
-					
-						# we need to pull one date for every year
-						# we need to loop through the data and add one to that year
+# for a_page in pages:
+# 	payload = {'pages': a_page, 'api-key'}
+# 	r = requests...
 
 
-				# for first_layer in data:
-				# # print (first_layer)
+# print (json.dumps(data, indent=4))
 
-<<<<<<< HEAD
-				# 	if first_layer == 'response':
-=======
+
 
 # for first_layer in data:
 # 	# print (first_layer)
->>>>>>> FETCH_HEAD
 
-				# 		for second_layer in data[first_layer]:
-				# 			# print (second_layer)
+# 	if first_layer == 'response':
 
-				# 			if second_layer == 'docs':
+# 		for second_layer in data[first_layer]:
+# 			# print (second_layer)
 
-				# 				for third_layer in data[first_layer][second_layer]:
-				# 					print (third_layer['headline']['main'])
+# 			if second_layer == 'docs':
 
-
- 				
- 				# loop through the dates & then through the pages
+# 				for third_layer in data[first_layer][second_layer]:
+# 					print (third_layer['headline']['main'])
 
 
 
