@@ -1,0 +1,537 @@
+{
+    "response": {
+        "docs": [
+            {
+                "snippet": "  Gunmen in a speeding car fired three shots at the home of former President Jose Luis Bustamente y Rivero on Monday night.",
+                "type_of_material": "News",
+                "document_type": "article",
+                "word_count": 76,
+                "lead_paragraph": "Gunmen in a speeding car fired three shots at the home of former President Jose Luis Bustamente y Rivero on Monday night.",
+                "byline": {
+                    "original": "Reuters",
+                    "person": [],
+                    "organization": "Reuters"
+                },
+                "print_page": "2",
+                "web_url": "http://www.nytimes.com/1986/01/01/world/peruvian-gunmen-fire-shots-at-home-of-an-ex-president.html",
+                "multimedia": [],
+                "pub_date": "1986-01-01T00:00:00Z",
+                "subsection_name": null,
+                "blog": [],
+                "source": "Reuters",
+                "section_name": "World",
+                "_id": "4fd1499a8eb7c8105d626b13",
+                "abstract": null,
+                "keywords": [
+                    {
+                        "name": "persons",
+                        "value": "BUSTAMENTE Y RIVERO, JOSE LUIS"
+                    },
+                    {
+                        "name": "glocations",
+                        "value": "PERU"
+                    }
+                ],
+                "headline": {
+                    "main": "Peruvian Gunmen Fire Shots At Home of an Ex-President"
+                },
+                "news_desk": "Foreign Desk"
+            },
+            {
+                "snippet": "  Statesmen, ordinary officeholders and political pundits rarely consult poets or their work, except for an occasional misquotation or out-of-context citation intended as a rhetorical flourish. Churchill and Roosevelt quoted Longfellow across the...",
+                "type_of_material": "Op-Ed",
+                "document_type": "article",
+                "word_count": 986,
+                "lead_paragraph": "Statesmen, ordinary officeholders and political pundits rarely consult poets or their work, except for an occasional misquotation or out-of-context citation intended as a rhetorical flourish. Churchill and Roosevelt quoted Longfellow across the seas in World War II; Yeats, for some reason, is the usual victim nowadays. At times, though, some self-ordained ''realist,'' brain-ossified by years of power-karate - someone who hasn't contemplated a scruple or a fresh thought (let alone a poem) in years, if ever - will choose to allude to poets. He will allow that certain ideas may be all right for the poets but not for hard-eyed ''leaders'' who can tell up from down in the rat maze that must be our natural habitat.",
+                "byline": {
+                    "original": "By M. L. Rosenthal; M. L. Rosenthal is author of ''Poems 1964-1980,'' ''Poetry and the Common Life'' and ''The Modern Poetic Sequence: The Genius of Modern Poetry'' (with Sally M. Gall)",
+                    "person": []
+                },
+                "print_page": "23",
+                "web_url": "http://www.nytimes.com/1986/01/01/opinion/what-poets-do-that-politicians-don-t.html",
+                "multimedia": [],
+                "pub_date": "1986-01-01T00:00:00Z",
+                "subsection_name": null,
+                "blog": [],
+                "source": "The New York Times",
+                "section_name": "Opinion",
+                "_id": "4fd155ff8eb7c8105d63a272",
+                "abstract": null,
+                "keywords": [
+                    {
+                        "name": "subject",
+                        "value": "INTERNATIONAL RELATIONS"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "BOOKS AND LITERATURE"
+                    }
+                ],
+                "headline": {
+                    "main": "What Poets Do That Politicians Don't"
+                },
+                "news_desk": "Editorial Desk"
+            },
+            {
+                "snippet": "  A severe but largely technical credit squeeze enveloped the money market yesterday, causing interbank overnight funds to trade between 9 percent and 10.5 percent all day. Elsewhere, dealers reported minimal price changes on the last trading day of...",
+                "type_of_material": "News",
+                "document_type": "article",
+                "word_count": 582,
+                "lead_paragraph": "A severe but largely technical credit squeeze enveloped the money market yesterday, causing interbank overnight funds to trade between 9 percent and 10.5 percent all day. Elsewhere, dealers reported minimal price changes on the last trading day of 1985. While most government securities dealers were closing their books early, the Federal Reserve's money transfer wires were humming well into the evening. Earlier, the Fed tried to directly alleviate the demand for credit through two-day system repurchase agreements.",
+                "byline": {
+                    "original": "By H. J. MAIDENBERG",
+                    "person": [
+                        {
+                            "rank": 1,
+                            "firstname": "H.",
+                            "role": "reported",
+                            "organization": "",
+                            "lastname": "MAIDENBERG",
+                            "middlename": "J."
+                        }
+                    ]
+                },
+                "print_page": "38",
+                "web_url": "http://www.nytimes.com/1986/01/01/business/credit-markets-but-interbank-rate-tops-9.html",
+                "multimedia": [],
+                "pub_date": "1986-01-01T00:00:00Z",
+                "subsection_name": null,
+                "blog": [],
+                "source": "The New York Times",
+                "section_name": "Business",
+                "_id": "4fd155ff8eb7c8105d63a27b",
+                "abstract": null,
+                "keywords": [
+                    {
+                        "name": "glocations",
+                        "value": "UNITED STATES"
+                    },
+                    {
+                        "name": "organizations",
+                        "value": "TREASURY, DEPARTMENT OF THE"
+                    },
+                    {
+                        "name": "organizations",
+                        "value": "FEDERAL HOME LOAN MORTGAGE CORP"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "INTEREST (MONEY)"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "CREDIT"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "BOND PRICES AND TRADING VOLUME"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "GOVERNMENT BONDS"
+                    }
+                ],
+                "headline": {
+                    "kicker": "CREDIT MARKETS",
+                    "main": "BUT INTERBANK RATE TOPS 9%"
+                },
+                "news_desk": "Financial Desk"
+            },
+            {
+                "snippet": "  Frank P. Balistrieri, the reputed leader of organized crime in Milwaukee, pleaded guilty today to conspiracy and racketeering and was sentenced to 10 years in prison.   He had been standing trial in Federal District Court on charges of skimming...",
+                "type_of_material": "News",
+                "document_type": "article",
+                "word_count": 295,
+                "lead_paragraph": "Frank P. Balistrieri, the reputed leader of organized crime in Milwaukee, pleaded guilty today to conspiracy and racketeering and was sentenced to 10 years in prison. He had been standing trial in Federal District Court on charges of skimming money from casinos before the money was recorded on the casinos' books.",
+                "byline": {
+                    "original": "AP",
+                    "person": [],
+                    "organization": "AP"
+                },
+                "print_page": "28",
+                "web_url": "http://www.nytimes.com/1986/01/01/us/reputed-milwaukee-crime-figure-pleads-guilty-in-kansas-city-trial.html",
+                "multimedia": [],
+                "pub_date": "1986-01-01T00:00:00Z",
+                "subsection_name": null,
+                "blog": [],
+                "source": "The New York Times",
+                "section_name": "U.S.",
+                "_id": "4fd155ff8eb7c8105d63a281",
+                "abstract": null,
+                "keywords": [
+                    {
+                        "name": "persons",
+                        "value": "BALISTRIERI, FRANK P"
+                    },
+                    {
+                        "name": "glocations",
+                        "value": "LAS VEGAS (NEV)"
+                    },
+                    {
+                        "name": "glocations",
+                        "value": "MILWAUKEE (WIS)"
+                    },
+                    {
+                        "name": "organizations",
+                        "value": "ARGENT CORP"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "TAX EVASION"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "ORGANIZED CRIME"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "CONSPIRACY, CRIMINAL"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "RACKETEERING AND RACKETEERS"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "SENTENCES (CRIMINAL)"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "GAMBLING"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "CASINOS"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "TRIALS"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "CRIME AND CRIMINALS"
+                    }
+                ],
+                "headline": {
+                    "main": "REPUTED MILWAUKEE CRIME FIGURE PLEADS GUILTY IN KANSAS CITY TRIAL"
+                },
+                "news_desk": "National Desk"
+            },
+            {
+                "snippet": "  Because of what it termed ''a serious error,'' Warner Books is recalling its first printing of 115,000 copies of ''First Love: A Young People's Guide to Sexual Information,'' a paperback book by Dr. Ruth Westheimer and Dr. Nathan Kravetz.",
+                "type_of_material": "News",
+                "document_type": "article",
+                "word_count": 111,
+                "lead_paragraph": "Because of what it termed ''a serious error,'' Warner Books is recalling its first printing of 115,000 copies of ''First Love: A Young People's Guide to Sexual Information,'' a paperback book by Dr. Ruth Westheimer and Dr. Nathan Kravetz.",
+                "byline": null,
+                "print_page": "24",
+                "web_url": "http://www.nytimes.com/1986/01/01/books/sex-guide-is-recalled-for-correction-of-text.html",
+                "multimedia": [],
+                "pub_date": "1986-01-01T00:00:00Z",
+                "subsection_name": null,
+                "blog": [],
+                "source": "The New York Times",
+                "section_name": "Arts; Books",
+                "_id": "4fd155ff8eb7c8105d63a28a",
+                "abstract": null,
+                "keywords": [
+                    {
+                        "name": "creative_works",
+                        "value": "FIRST LOVE: A YOUNG PEOPLE'S GUIDE TO SEXUAL INFORMATION (BOOK)"
+                    },
+                    {
+                        "name": "persons",
+                        "value": "KRAVETZ, NATHAN"
+                    },
+                    {
+                        "name": "persons",
+                        "value": "WESTHEIMER, RUTH"
+                    },
+                    {
+                        "name": "organizations",
+                        "value": "WARNER BOOKS"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "SEX"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "CHILDREN AND YOUTH"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "BOOKS AND LITERATURE"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "BIRTH CONTROL AND FAMILY PLANNING"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "RECALLS AND BANS OF PRODUCTS"
+                    }
+                ],
+                "headline": {
+                    "main": "Sex Guide Is Recalled For Correction of Text"
+                },
+                "news_desk": "Cultural Desk"
+            },
+            {
+                "snippet": "  Bruce A. Norris, former president and owner of the Detroit Red Wings and a member of the Hockey Hall of Fame, died today at age 61, a league spokesman said.   The spokesman said Mr. Norris had been ill and hospitalized recently.   Mr. Norris, a...",
+                "type_of_material": "Obituary",
+                "document_type": "article",
+                "word_count": 81,
+                "lead_paragraph": "Bruce A. Norris, former president and owner of the Detroit Red Wings and a member of the Hockey Hall of Fame, died today at age 61, a league spokesman said. The spokesman said Mr. Norris had been ill and hospitalized recently. Mr. Norris, a two-time chairman of the National Hockey League's Board of Governors, was president of the Red Wings and a governor from 1955 through 1982, when he sold controlling interest in the team.",
+                "byline": {
+                    "original": "AP",
+                    "person": [],
+                    "organization": "AP"
+                },
+                "print_page": "48",
+                "web_url": "http://www.nytimes.com/1986/01/01/obituaries/bruce-a-norris-61-is-dead-ex-chairman-of-nhl-board.html",
+                "multimedia": [],
+                "pub_date": "1986-01-01T00:00:00Z",
+                "subsection_name": null,
+                "blog": [],
+                "source": "The New York Times",
+                "section_name": "Obituaries",
+                "_id": "4fd155ff8eb7c8105d63a290",
+                "abstract": null,
+                "keywords": [
+                    {
+                        "name": "persons",
+                        "value": "NORRIS, BRUCE A"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "BIOGRAPHICAL INFORMATION"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "DEATHS"
+                    }
+                ],
+                "headline": {
+                    "kicker": "BRUCE A. NORRIS, 61, IS DEAD",
+                    "main": "EX-CHAIRMAN OF N.H.L. BOARD"
+                },
+                "news_desk": "Obituary"
+            },
+            {
+                "snippet": "  Heritage Communications Inc. said it had bought 50 percent of Gill Industries, which operates the cable television system in San Jose, Calif.",
+                "type_of_material": "News",
+                "document_type": "article",
+                "word_count": 95,
+                "lead_paragraph": "Heritage Communications Inc. said it had bought 50 percent of Gill Industries, which operates the cable television system in San Jose, Calif.",
+                "byline": null,
+                "print_page": "37",
+                "web_url": "http://www.nytimes.com/1986/01/01/business/heritage-gill-deal.html",
+                "multimedia": [],
+                "pub_date": "1986-01-01T00:00:00Z",
+                "subsection_name": null,
+                "blog": [],
+                "source": "The New York Times",
+                "section_name": "Business",
+                "_id": "4fd156558eb7c8105d63aab9",
+                "abstract": null,
+                "keywords": [
+                    {
+                        "name": "organizations",
+                        "value": "GILL INDUSTRIES"
+                    },
+                    {
+                        "name": "organizations",
+                        "value": "HERITAGE COMMUNICATIONS INC"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "MERGERS, ACQUISITIONS AND DIVESTITURES"
+                    }
+                ],
+                "headline": {
+                    "main": "HERITAGE-GILL DEAL"
+                },
+                "news_desk": "Financial Desk"
+            },
+            {
+                "snippet": "  Desperate oddball characters inhabit the 12 cabaret songs by the composer William Bolcom and the poet and playwright Arnold Weinstein that have been collected under the title ''Black Max.''   ''Surprise!'' tells the story of an office worker who,...",
+                "type_of_material": "Review",
+                "document_type": "article",
+                "word_count": 291,
+                "lead_paragraph": "Desperate oddball characters inhabit the 12 cabaret songs by the composer William Bolcom and the poet and playwright Arnold Weinstein that have been collected under the title ''Black Max.'' ''Surprise!'' tells the story of an office worker who, shortly after a party celebrating her 25th year with the company, gulps down iodine at the water cooler.",
+                "byline": {
+                    "original": "By Stephen Holden",
+                    "person": [
+                        {
+                            "lastname": "Holden",
+                            "role": "reported",
+                            "rank": 1,
+                            "firstname": "Stephen",
+                            "organization": ""
+                        }
+                    ]
+                },
+                "print_page": "12",
+                "web_url": "http://www.nytimes.com/1986/01/01/arts/cabaret-black-max.html",
+                "multimedia": [],
+                "pub_date": "1986-01-01T00:00:00Z",
+                "subsection_name": null,
+                "blog": [],
+                "source": "The New York Times",
+                "section_name": "Arts",
+                "_id": "4fd152928eb7c8105d634f51",
+                "abstract": null,
+                "keywords": [
+                    {
+                        "name": "persons",
+                        "value": "BOLCOM, WILLIAM"
+                    },
+                    {
+                        "name": "persons",
+                        "value": "WEINSTEIN, ARNOLD"
+                    },
+                    {
+                        "name": "organizations",
+                        "value": "MEDICINE SHOW THEATER ENSEMBLE"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "MUSIC"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "REVIEWS"
+                    }
+                ],
+                "headline": {
+                    "main": "CABARET: 'BLACK MAX'"
+                },
+                "news_desk": "Cultural Desk"
+            },
+            {
+                "snippet": "  Libya today denied involvement in the Vienna and Rome airport attacks and said remarks by the United States and Israeli officials were evidence of intended ''joint aggression against Libya by the American military machine and by Israel.''   Israel...",
+                "type_of_material": "News",
+                "document_type": "article",
+                "word_count": 592,
+                "lead_paragraph": "Libya today denied involvement in the Vienna and Rome airport attacks and said remarks by the United States and Israeli officials were evidence of intended ''joint aggression against Libya by the American military machine and by Israel.'' Israel has threatened retaliation after the attacks on its airline check-in counters at the two airports. United States officials have said that military measures against terrorists were not excluded.",
+                "byline": {
+                    "original": "Reuters",
+                    "person": [],
+                    "organization": "Reuters"
+                },
+                "print_page": "5",
+                "web_url": "http://www.nytimes.com/1986/01/01/world/libyans-deny-a-connection-to-terrorism-at-2-airports.html",
+                "multimedia": [],
+                "pub_date": "1986-01-01T00:00:00Z",
+                "subsection_name": null,
+                "blog": [],
+                "source": "Reuters",
+                "section_name": "World; Washington",
+                "_id": "4fd15fd98eb7c8105d6491f9",
+                "abstract": null,
+                "keywords": [
+                    {
+                        "name": "glocations",
+                        "value": "ITALY"
+                    },
+                    {
+                        "name": "glocations",
+                        "value": "VIENNA (AUSTRIA)"
+                    },
+                    {
+                        "name": "glocations",
+                        "value": "ROME (ITALY)"
+                    },
+                    {
+                        "name": "glocations",
+                        "value": "AUSTRIA"
+                    },
+                    {
+                        "name": "glocations",
+                        "value": "MIDDLE EAST"
+                    },
+                    {
+                        "name": "glocations",
+                        "value": "LIBYA"
+                    },
+                    {
+                        "name": "glocations",
+                        "value": "ISRAEL, STATE OF"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "UNITED STATES INTERNATIONAL RELATIONS"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "ARMAMENT, DEFENSE AND MILITARY FORCES"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "AIRPORTS"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "TERRORISM"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "UNITED STATES ARMAMENT AND DEFENSE"
+                    }
+                ],
+                "headline": {
+                    "main": "LIBYANS DENY A CONNECTION TO TERRORISM AT 2 AIRPORTS"
+                },
+                "news_desk": "Foreign Desk"
+            },
+            {
+                "snippet": "  Jorge Velasquez misjudged the finish of the Display Handicap yesterday, pulling up Southern Sultan, the second choice, after crossing the line as the leader with a mile to be run in the two-and-a-quarter-mile race. His mount went on to finish a...",
+                "type_of_material": "Statistics",
+                "document_type": "article",
+                "word_count": 229,
+                "lead_paragraph": "Jorge Velasquez misjudged the finish of the Display Handicap yesterday, pulling up Southern Sultan, the second choice, after crossing the line as the leader with a mile to be run in the two-and-a-quarter-mile race. His mount went on to finish a badly beaten sixth in the field of nine.",
+                "byline": null,
+                "print_page": "17",
+                "web_url": "http://www.nytimes.com/1986/01/01/sports/blunder-by-velasquez.html",
+                "multimedia": [],
+                "pub_date": "1986-01-01T00:00:00Z",
+                "subsection_name": null,
+                "blog": [],
+                "source": "The New York Times",
+                "section_name": "Sports",
+                "_id": "4fd16a048eb7c8105d65a637",
+                "abstract": null,
+                "keywords": [
+                    {
+                        "name": "creative_works",
+                        "value": "DISPLAY HANDICAP"
+                    },
+                    {
+                        "name": "organizations",
+                        "value": "RACING ASSN, NEW YORK"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "HORSE RACING"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "THOROUGHBRED RACING"
+                    }
+                ],
+                "headline": {
+                    "main": "Blunder by Velasquez"
+                },
+                "news_desk": "Sports Desk"
+            }
+        ],
+        "meta": {
+            "time": 82,
+            "hits": 204,
+            "offset": 100
+        }
+    },
+    "status": "OK",
+    "copyright": "Copyright (c) 2013 The New York Times Company.  All Rights Reserved."
+}

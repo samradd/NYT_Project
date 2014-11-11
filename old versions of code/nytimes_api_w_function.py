@@ -26,7 +26,7 @@ while date < 20000101:
 
 	pages = int(count / 10)
 
-	print (pages)
+	# print (pages)
 
 	#for page in pages -- another request, etc.
 
@@ -34,39 +34,39 @@ while date < 20000101:
 
 # 	while page > 0:
 
-# 		# API call
-# 		payload = {'begin_date': date, 'end_date': date, 'fq': 'news_desk:("National Desk")', 'page': page, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
-# 		r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
+		# API call
+		payload = {'begin_date': date, 'end_date': date, 'fq': 'news_desk:("National Desk")', 'page': page, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
+		r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
 
-# 		# Parses JSON from NYT API into a data structure 
-# 		data = json.loads(r.text)
+		# Parses JSON from NYT API into a data structure 
+		data = json.loads(r.text)
 
-# 		# print (json.dumps(data, indent=4))
+		# print (json.dumps(data, indent=4))
 
-# 		# If statement to check whether API response is "good"		
-# 		if data['response']['docs']:
+		# If statement to check whether API response is "good"		
+		if data['response']['docs']:
 		
-# 			# Creates variables for 1st article from each day
-# 			headline = data['response']['docs'][0]['headline']['main']
-# 			pub_date = data['response']['docs'][0]['pub_date']
-# 			# snippet = data['response']['docs'][0]['snippet']
-# 			# multimedia = data['response']['docs'][0]['multimedia']
+			# Creates variables for 1st article from each day
+			headline = data['response']['docs'][0]['headline']['main']
+			pub_date = data['response']['docs'][0]['pub_date']
+			# snippet = data['response']['docs'][0]['snippet']
+			# multimedia = data['response']['docs'][0]['multimedia']
 
 
 
-# 			# Prints those variables
-# 			# print (headline + ' - ' + pub_date)
+			# Prints those variables
+			# print (headline + ' - ' + pub_date)
 
-# 			headline_list = (headline + ' - ' + pub_date)
+			headline_list = (headline + ' - ' + pub_date)
 
-# 			data_list.append(headline_list)
+			data_list.append(headline_list)
 
-# 			# file_name = JsonFileName(headline[0], pub_date)
+			file_name = JsonFileName(headline[0], pub_date)
 
-# 		page = page - 1
+		page = page - 1
 
-# 		with open('file_name.txt', 'w') as f:
-# 			f.write(json.dumps(data_list, indent=4))
+		with open('file_name.txt', 'w') as f:
+			f.write(json.dumps(data_list, indent=4))
 
 
 # # 	# Increments the "beginning date" by subtracting 10,000 (reduces it by one year)
