@@ -63,5 +63,8 @@ for year in range(1900,1902):
 				file_name = JsonFileName("headlines","count" + str(count),str(year))
 
 				## write the json files for each year
-				with open(file_name, 'w') as f:
-					f.write(json.dumps(json_list,indent=4))
+	with open(file_name, 'w') as f:
+		f.write(json.dumps(json_list,indent=4))
+
+	json_list = []
+
