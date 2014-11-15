@@ -3,18 +3,20 @@ import requests, json, re
 ## create a function to use later to name the json files
 def JsonFileName(x,y,z):
 	separator = '_'
-	result = x + separator + y + separator + z
+	result = x + separator + y + separator + z + '.json'
 	return result
 
 ## create a list to append later
 json_list = []
 
-for year in range(1900,1902):
+for year in range(1900,2015):
 
-	begin_date = str(year) + '0101'
-	end_date = str(year) + '0101'
+	begin_date = str(year) + '1031'
+	end_date = str(year) + '1031'
+	headline_term = 'headline:("fire")'
 
-	payload = {'begin_date': begin_date, 'end_date': end_date, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
+
+	payload = {'fq': headline_term, 'begin_date': begin_date, 'end_date': end_date, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
 	r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
 
 	data = json.loads(r.text)
@@ -29,11 +31,12 @@ for year in range(1900,1902):
 	## divide by 10 to find total number of pages for year
 	pages = int(count / 10)
 	print ("pages:",pages)
+	
 
 	## loop through pages with dates
 	for a_page in range(0,pages+1):
 
-		payload = {'begin_date': begin_date, 'end_date': end_date, 'page': a_page, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
+		payload = {'fq': headline_term, 'begin_date': begin_date, 'end_date': end_date, 'page': a_page, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
 		r = requests.get('http://api.nytimes.com/svc/search/v2/articlesearch.json', params=payload)
 
 		data = json.loads(r.text)
@@ -45,6 +48,7 @@ for year in range(1900,1902):
 			for article in data['response']['docs']:
 				headline = article['headline']['main']
 				pub_date = article['pub_date']
+
 
 				## combine the gathered data
 				headline_list = (headline + '-' + pub_date)
