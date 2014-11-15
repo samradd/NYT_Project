@@ -11,6 +11,8 @@ json_list = []
 
 for year in range(1900,2015):
 
+# we'd like to search everyday in the year, 
+# but our loop doesnt work unless we do a specific day (here we're doing 10/31)
 	begin_date = str(year) + '1031'
 	end_date = str(year) + '1031'
 	headline_term = 'headline:("fire")'
@@ -48,10 +50,10 @@ for year in range(1900,2015):
 			for article in data['response']['docs']:
 				headline = article['headline']['main']
 				pub_date = article['pub_date']
-
+				web_url = article['web_url']
 
 				## combine the gathered data
-				headline_list = (headline + '-' + pub_date)
+				headline_list = (headline + '-' + pub_date + '-' + web_url)
 
 				# print (headline_list)
 
