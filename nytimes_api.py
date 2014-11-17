@@ -9,13 +9,11 @@ def JsonFileName(x,y,z):
 ## create a list to append later
 json_list = []
 
-for year in range(1900,2015):
+for year in range(1915,2015):
 
-# we'd like to search everyday in the year, 
-# but our loop doesnt work unless we do a specific day (here we're doing 10/31)
-	begin_date = str(year) + '1031'
-	end_date = str(year) + '1031'
-	headline_term = 'headline:("fire")'
+	begin_date = str(year) + '0101'
+	end_date = str(year) + '1231'
+	headline_term = 'headline:("birth control")'
 
 
 	payload = {'fq': headline_term, 'begin_date': begin_date, 'end_date': end_date, 'api-key': '7814e2003e284eebd3d2c5248733ece8:17:65376813'}
@@ -51,14 +49,20 @@ for year in range(1900,2015):
 				headline = article['headline']['main']
 				pub_date = article['pub_date']
 				web_url = article['web_url']
+				snippet = article['snippet']
 
-				## combine the gathered data
-				headline_list = (headline + '-' + pub_date + '-' + web_url)
+				if snippet is None:
+					print ('No snippet')
+				else:
+					# print (snippet)
 
-				# print (headline_list)
+					## combine the gathered data
+					headline_list = (headline + '-' + pub_date + '-' + web_url + '-' + snippet)
 
-				## add the new data to the empty list
-				json_list.append(headline_list)
+					# print (headline_list)
+
+					## add the new data to the empty list
+					json_list.append(headline_list)
 
 				## use a regular expression to pull just the year out of the date
 				# p = re.compile('\d\d\d\d')
@@ -66,7 +70,7 @@ for year in range(1900,2015):
 
 				## name the file "headline", the number of results, and the year (regular expression)
 				## replace str(year) below with (m.group(0)) for the regular expression to work
-				file_name = JsonFileName("headlines","count" + str(count),str(year))
+	file_name = JsonFileName("headlines","count" + str(count),str(year))
 
 				## write the json files for each year
 	with open(file_name, 'w') as f:
