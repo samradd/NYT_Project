@@ -57,7 +57,7 @@ for year in range(1915,2015):
 					# print (snippet)
 
 					## combine the gathered data
-					headline_list = (headline + '-' + pub_date + '-' + web_url + '-' + snippet)
+					headline_list = {"headline": headline, "pub_date": pub_date, "web_url": web_url, "snippet": snippet}
 
 					# print (headline_list)
 
@@ -77,4 +77,8 @@ for year in range(1915,2015):
 		f.write(json.dumps(json_list,indent=4))
 
 	json_list = []
+
+
+
+
 
