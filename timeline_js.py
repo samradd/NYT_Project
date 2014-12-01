@@ -28,6 +28,7 @@ import json, os
 
 
 
+
 data = []
 
 for root, dirs, files in os.walk('.'):
@@ -57,13 +58,8 @@ for root, dirs, files in os.walk('.'):
 
 					# print (nytimes)
 
-				data.append(nytimes)
-				# print (data)
-			
+					data.append(nytimes)
+					# print (data)
+				
 				with open("timeline_file.json", 'w') as f:
 					f.write(json.dumps(data,indent=4))
-
-
-
-
-

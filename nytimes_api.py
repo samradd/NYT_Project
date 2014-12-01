@@ -6,6 +6,18 @@ def JsonFileName(x,y,z):
 	result = x + separator + y + separator + z + '.json'
 	return result
 
+# DateConverter function takes NYT date string and turns it into TimelineJS-compatible date
+# NYT >> "startDate": "1931-01-05T00:00:00Z"
+# TimelineJS >> "startDate":"2011,12,10"
+
+def DateConverter(date):
+	year = date[0:4]
+	month = date[5:7]
+	day = date[8:10]
+	comma = ","
+	result = year + comma + month + comma + day
+	return result
+
 ## create a list to append later
 json_list = []
 
@@ -47,22 +59,18 @@ for year in range(1915,2015):
 
 			for article in data['response']['docs']:
 				headline = article['headline']['main']
-				pub_date = article['pub_date']
+				pub_date = DateConverter(article['pub_date'])
 				web_url = article['web_url']
 				snippet = article['snippet']
 
-				if snippet is None:
-					print ('No snippet')
-				else:
-					# print (snippet)
 
-					## combine the gathered data
-					headline_list = (headline + '-' + pub_date + '-' + web_url + '-' + snippet)
+				## combine the gathered data
+				headline_list = {"headline": headline, "pub_date": pub_date, "web_url": web_url, "snippet": snippet}
 
-					# print (headline_list)
+				# print (headline_list)
 
-					## add the new data to the empty list
-					json_list.append(headline_list)
+				## add the new data to the empty list
+				json_list.append(headline_list)
 
 				## use a regular expression to pull just the year out of the date
 				# p = re.compile('\d\d\d\d')
@@ -77,4 +85,6 @@ for year in range(1915,2015):
 		f.write(json.dumps(json_list,indent=4))
 
 	json_list = []
+
+
 
