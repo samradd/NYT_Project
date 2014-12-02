@@ -52,7 +52,7 @@ for root, dirs, files in os.walk('.'):
 					nytimes["endDate"] = articles["pub_date"]
 					nytimes["headline"] = articles["headline"]
 					nytimes["text"] = articles["snippet"]
-					nytimes["tag"] = None
+					nytimes["tag"] = articles["web_url"]
 					nytimes["classname"] = None
 					nytimes["asset"] = None
 
